@@ -1,34 +1,48 @@
+import React from "react";
 import './App.css';
 
-function App() {
+function Match() {
   return (
     <>
-      <nav className="navbar">
-        <h1>Memory <span>Games</span></h1>
-        <a href="Simon.html" className="button">Simon Says</a>
-        <a href="MatchMatch.html" className="button">Match Match</a>
-        <a href="Memory.html" className="button">A Memory Game</a>
-      </nav>
 
-      <div className="game-container">
-        <h1>The games:</h1>
+      <div className="Game-match">
+        <h1>Match Match</h1>
+        <p>Select the Same cards</p>
 
-        <a href="Simon.html" className="button">Simon Says</a>
-        <a href="MatchMatch.html" className="button">Match Match</a>
-        <a href="Memory.html" className="button">A Memory Game</a>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <br />
 
-        <img src="https://ita24veesaar.ita.voco.ee/photos/Screenshot%202026-02-16%20at%2011.21.14.png" alt="game1" />
-        <img src="https://ita24veesaar.ita.voco.ee/photos/Screenshot%202026-02-16%20at%2011.21.32.png" alt="game2" />
-        <img src="https://ita24veesaar.ita.voco.ee/photos/Screenshot%202026-02-16%20at%2011.21.44.png" alt="game3" />
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <br />
+
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <br />
+
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <br />
+        <br />
+
+        <a href="Proto.html" className="Return">Return</a>
       </div>
 
-      <footer>
-        <div>
-          <p>© 2026 Memory Games. All rights reserved.</p>
-        </div>
-      </footer>
-    </>
+   </>
   );
 }
 
-export default App;
+export default Match;

@@ -1,9 +1,9 @@
 import { expect, test } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import App from './Main';
+import Memory from './Number';
 
 test('renders learn react link', () => {
-  render(<App />);
+  render(<Memory />);
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeDefined();
 });

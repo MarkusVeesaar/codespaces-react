@@ -1,34 +1,46 @@
+import { useState } from "react";
 import './App.css';
 
-function App() {
+function Memory() {
+  const correctNumber = Math.floor(100000 + Math.random() * 900000);
+
+  const [input, setInput] = useState("");
+  const [result, setResult] = useState("");
+
+  const handleSubmit = () => {
+    if (input === correctNumber) {
+      setResult("✅ Correct!");
+    } else {
+      setResult("❌ Wrong! Try again.");
+    }
+  };
+
   return (
     <>
-      <nav className="navbar">
-        <h1>Memory <span>Games</span></h1>
-        <a href="Simon.html" className="button">Simon Says</a>
-        <a href="MatchMatch.html" className="button">Match Match</a>
-        <a href="Memory.html" className="button">A Memory Game</a>
-      </nav>
 
-      <div className="game-container">
-        <h1>The games:</h1>
+      <div className="game-Memory">
+        <h1>Memory Game</h1>
+        <p>Remember the number</p>
+        <p>{correctNumber}</p>
 
-        <a href="Simon.html" className="button">Simon Says</a>
-        <a href="MatchMatch.html" className="button">Match Match</a>
-        <a href="Memory.html" className="button">A Memory Game</a>
+        <input 
+          type="text" 
+          value={input} 
+          onChange={(e) => setInput(e.target.value)} 
+        />
 
-        <img src="https://ita24veesaar.ita.voco.ee/photos/Screenshot%202026-02-16%20at%2011.21.14.png" alt="game1" />
-        <img src="https://ita24veesaar.ita.voco.ee/photos/Screenshot%202026-02-16%20at%2011.21.32.png" alt="game2" />
-        <img src="https://ita24veesaar.ita.voco.ee/photos/Screenshot%202026-02-16%20at%2011.21.44.png" alt="game3" />
+        <button onClick={handleSubmit}>Submit</button>
+
+        {result && <p>{result}</p>}
+
+        <br />
+        <br />
+
+        <a href="Proto.html" className="Return">Return</a>
       </div>
 
-      <footer>
-        <div>
-          <p>© 2026 Memory Games. All rights reserved.</p>
-        </div>
-      </footer>
     </>
   );
 }
 
-export default App;
+export default Memory;
