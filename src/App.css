@@ -1,31 +1,108 @@
-.App {
-  text-align: center;
+.navbar {
+    text-align: center;
+    background-color: black;
+    color: rgb(22, 224, 11);
+    padding: 10px;
+    width: 100%;
+    top: 0;
+    position: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar a {
+    margin: 50px 30px 100px 30px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 25%;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: green;
+}
+span {
+    color: yellow;
+}
+footer {
+    text-align: center;
+    bottom: 0px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+.game-container{
+    text-align: center;
+    color: rgb(22, 224, 11);
+    background-color: whitesmoke;
+    padding: 20px 0 20px 0;
+    margin: 150px 25% 30px 25%;
+    font-size: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.game-container a {
+    margin: 50px 30px 50px 30px;
+    padding: 40px 15px 40px 15px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 25%;
+    text-decoration: none;
 }
-
-.App-link {
-  color: #61dafb;
+.game-container a:hover{
+    color: black;
+    background-color: rgb(22, 224, 11);
 }
-
-.heart {
-  color: #ff0000;
+.game-container h1 {
+    margin-bottom: 70px;
 }
-
-.small {
-  font-size: 0.75rem;
+.game-container img {
+    padding: 20px;
+    margin: 45px;
+}
+.game-Simon {
+    text-align: center;
+    color: rgb(22, 224, 11);
+    background-color: whitesmoke;
+    padding: 25px 0 100px 0;
+    margin: 150px 25% 30px 25%;
+    font-size: 30px;
+}
+.game-Simon button {
+    padding: 60px;
+    margin: 5px;
+}
+.Game-match {
+    text-align: center;
+    color: rgb(22, 224, 11);
+    background-color: whitesmoke;
+    padding: 25px 0 100px 0;
+    margin: 150px 25% 30px 25%;
+    font-size: 30px;
+}
+.Game-match button {
+    padding: 60px;
+    margin: 5px;
+}
+.Return {
+    color: rgb(22, 224, 11);
+    background-color: black;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 25%;
+}
+.Return:hover{
+    background-color: gray;
+}
+.game-Memory {
+    text-align: center;
+    color: rgb(22, 224, 11);
+    background-color: whitesmoke;
+    padding: 25px 0 100px 0;
+    margin: 150px 25% 30px 25%;
+    font-size: 30px;
+}
+img {
+    height: 200px;
+    width: 200px;
 }
