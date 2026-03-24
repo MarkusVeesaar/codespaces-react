@@ -87,10 +87,7 @@ footer {
     margin: 180px 25% 30px 25%;
     font-size: 30px;
 }
-.Game-match button {
-    padding: 60px;
-    margin: 5px;
-}
+
 .Return {
     color: rgb(22, 224, 11);
     background-color: black;
@@ -112,4 +109,14 @@ footer {
 img {
     height: 200px;
     width: 200px;
+}
+.Game-match img {
+    height: 100px;
+    width: 100px;
+}
+.Game-match button {
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+    margin: 5px;
 }
