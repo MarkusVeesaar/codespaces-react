@@ -79,6 +79,65 @@ footer {
     padding: 60px;
     margin: 5px;
 }
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.simon-button {
+    background-color: black;
+    border: 2px solid rgb(22, 224, 11);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    transform: scale(1);
+}
+.simon-button:hover:not(:disabled) {
+    background-color: rgb(22, 224, 11);
+    transform: scale(1.05);
+}
+.simon-button:active:not(:disabled) {
+    transform: scale(0.95);
+}
+.simon-button.lit {
+    background-color: rgb(22, 224, 11) !important;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgb(22, 224, 11);
+}
+.simon-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+.start-button {
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: black;
+    color: rgb(22, 224, 11);
+    border: 2px solid rgb(22, 224, 11);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.debug-button {
+    padding: 8px 16px;
+    margin: 10px;
+    background-color: #333;
+    color: yellow;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.debug-info {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
 .Game-match {
     text-align: center;
     color: rgb(22, 224, 11);
