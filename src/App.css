@@ -115,8 +115,21 @@ img {
     width: 100px;
 }
 .Game-match button {
-    height: 150px;
-    width: 150px;
+    height: 125px;
+    width: 125px;
     padding: 5px;
     margin: 5px;
+}
+.Game-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 10%;
+    width: 80%;
+}
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    color:black
 }
